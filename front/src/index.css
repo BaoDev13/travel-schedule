@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header, .footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
+.travel-list, .add-travel {
+  margin-bottom: 2rem;
+}
+
+.travel-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .travel-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.travel-details img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
