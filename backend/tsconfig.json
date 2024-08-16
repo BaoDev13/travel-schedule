@@ -8,6 +8,7 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist",
     "rootDir": "./src",
+    "moduleResolution": "node",
     "typeRoots": [
       "./node_modules/@types",
       "./src/types"
