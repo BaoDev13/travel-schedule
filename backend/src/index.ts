@@ -1,7 +1,7 @@
 import express, { Request, Response } from 'express';
 import mongoose, { mongo } from 'mongoose';
 import cors from 'cors';
-import { MONGODB_URI } from './config/config';
+import { MONGODB_URI, PORT } from './config/config';
 
 const app = express();
 app.use(cors());
@@ -76,5 +76,4 @@ app.delete('/api/travels/:id', async (req, res) => {
     }
 })
 
-const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
